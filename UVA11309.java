@@ -2,36 +2,7 @@
 import java.util.Scanner;
 
 public class Main {
-	
-	public static String getVerticalString(String c,int group) {
-		
-		String d = "";
-		
-		for(int j = 0; j<group; j++) {
-			
-			for(int i = j; i<group*group; i+=group) {
-				
-				d = d + c.charAt(i);
-				
-			}
-		}
-		
-		
-		return d;
-	}
-	
-	public static String prepare(String c) {
-		
-		c = c.replace('.', (char) 32);
-		c = c.replace(',', (char) 32);
-		c = c.replace('!', (char) 32);
-		c = c.replace('?', (char) 32);
-		c = c.replace('(', (char)32);
-		c = c.replace(')', (char)32);
-		c = c.replace(" ", "");
-		
-		return c;
-	}
+
 
 	public static boolean isPalindrome(String c) {
 
