@@ -31,7 +31,7 @@ public class Main {
 			if(table.containsKey(c.charAt(i))) {
 				f.setCharAt(i, table.get(c.charAt(i)));
 			}
-			
+		
 			else return false;
 			
 		}
