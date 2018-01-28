@@ -5,8 +5,6 @@ public class Main {
 
 
 	public static boolean isPalindrome(String c) {
-
-
 		
 		int length = c.length();
 
