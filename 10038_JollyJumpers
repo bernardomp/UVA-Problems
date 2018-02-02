@@ -1,0 +1,46 @@
+import java.util.HashSet;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String args[]) {
+
+        Scanner scan = new Scanner(System.in);
+
+        int val;
+
+        while (scan.hasNextLine()) {
+
+            val = scan.nextInt();
+
+            int v[] = new int[val];
+
+            for (int i = 0; i < val; i++) {
+
+                v[i] = scan.nextInt();
+
+            }
+            scan.nextLine();
+
+            HashSet<Integer> set = new HashSet<>(3000);
+
+           
+                for (int k = 0; k < val - 1; k++) {
+
+                    int b = Math.abs(v[k] - v[k + 1]);
+                   
+                    if(b>0 && b < val) set.add(b);
+
+                }
+
+                if (set.size()==val-1) {
+                    System.out.println("Jolly");
+                } else {
+                    System.out.println("Not jolly");
+                }
+
+            
+        }
+    }
+
+}
